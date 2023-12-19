@@ -6,6 +6,8 @@ import javafx.scene.control.Label;
 public class Window2 implements Refresh {
 
     @FXML
+    public Label lblStage;
+    @FXML
     private Label lblName;
 
     public void setName(String name) {
@@ -16,4 +18,5 @@ public class Window2 implements Refresh {
     public void refresh() {
         lblName.setText(String.valueOf(Resource.RESOURCES.size()));
     }
+
 }
